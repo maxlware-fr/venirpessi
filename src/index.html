@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>VenirPessi - L'actualité des Pessi en temps réel</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <h1>VenirPessi</h1>
+      <button id="toggle-theme">🌙 Mode sombre</button>
+    </div>
+    <nav>
+      <ul class="categories">
+        <li><a href="raids.html">Raids</li>
+        <li><a href="catégories.html">Insolite</a></li>
+        <li><a href="catégories.html">Flash</a</li>
+        <li><a href="catégories.html">Archives</a></li>
+      </ul>
+      <ul class="socials">
+        <li><a href="https://twitter.com/VenirPessi" target="_blank">Twitter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="card">
+      <h2>Le site est encore en développement...</h2>
+    </article>   
+    <article class="card">
+      <img src="images/new.PNG" alt="Messi" class="article-img" />
+      <h2>Du nouveau ?</h2>
+      <p>Une nouvelle version du site de VenirPessi à été refait !</p>
+      <a href="articles/du-nouveau.html">Lire l'article →</a>
+    </article>   
+      <article class="card">
+        <img src="images/messi1.PNG" alt="Messi" class="article-img" />
+        <h2>Un Pessi aurait repassé 10 fois le brevet !</h2>
+        <p>Une déclaration choc publiée ce matin sur le réseau X (ex-Twitter).</p>
+        <a href="articles/un-pessi-a-raté-le-brevet-10-fois.html">Lire l'article →</a>
+      </article>      
+      <article class="card">
+        <img src="articles/img/bk-bayrou.jpg" alt="Messi" class="article-img" />
+        <h2>François Bayrou mange à Burger King avec un Pessi !</h2>
+        <p>François Bayrou a préféré manger chez @BurgerKingFR avec un Pessi plutôt que d'assister au conseil des ministres.</p>
+        <a href="articles/francois-bayrou-mange-chez-burger-king-avec-un-pessi.html">Lire l'article →</a>
+      </article>   
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 VenirPessi. Site fan fait avec ❤️ et un peu de mauvaise foi...</p>
+  </footer>
+  <script>
+    const toggle = document.getElementById('toggle-theme');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️ Mode clair' : '🌙 Mode sombre';
+    });
+  </script>
+</body>
+</html>
