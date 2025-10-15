@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connexion - VenirPessi</title>
+  <link rel="stylesheet" href="admin-login.css">
+</head>
+<css>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-container h1 {
+  font-family: 'Georgia', serif;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form label {
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.login-form input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.login-form input:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.login-form button {
+  padding: 12px;
+  background-color: #000;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #333;
+}
+
+.back {
+  margin-top: 20px;
+}
+
+.back a {
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back a:hover {
+  text-decoration: underline;
+}
+    </style>
+</css>
+<body>
+
+  <div class="login-container">
+    <h1>Admin - VenirPessi</h1>
+    <form action="admin-dashboard.html" method="POST" class="login-form">
+      <label for="username">Nom d'utilisateur</label>
+      <input type="text" id="username" name="username" placeholder="Admin" required>
+
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" name="password" placeholder="••••••••" required>
+
+      <button type="submit">Connexion</button>
+    </form>
+    <p class="back"><a href="https://venirpessi.eletrix.fr">← Retour au site</a></p>
+  </div>
+
+</body>
+</html>
