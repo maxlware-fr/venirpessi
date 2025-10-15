@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VenirPessi - Les Raids</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+</head>
+<css>
+    <style>
+        /* Section principale article-type */
+.article-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.article-full h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Cinzel Decorative', serif;
+  text-align: center;
+  color: var(--accent);
+}
+
+.article-meta {
+  text-align: center;
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 2rem;
+}
+
+.article-img-large {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin: 2rem 0;
+}
+
+.article-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  padding-bottom: 3rem;
+}
+
+.article-content h3 {
+  margin-top: 2rem;
+  color: var(--accent);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.article-content ul {
+  padding-left: 1.5rem;
+  list-style-type: "⚽ ";
+  margin-top: 0.5rem;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+}
+
+.back-button {
+  display: inline-block;
+  background-color: var(--accent);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 2rem;
+}
+
+.back-button:hover {
+  background-color: #ff4e4e;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .article-page {
+    padding: 1rem;
+  }
+
+  .article-full h2 {
+    font-size: 2rem;
+  }
+
+  .article-content {
+    font-size: 1rem;
+  }
+}
+    </style>
+</css>
+<body>
+
+  <header>
+    <div class="header-top">
+      <h1>VenirPessi</h1>
+      <button id="toggle-theme">🌙 Mode sombre</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="catégories.html">Insolite</a></li>
+        <li><a href="catégories.html">Flash</a</li>
+        <li><a href="catégories.html">Archives</a></li>
+        <li><a href="raids.html">Raids</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="article-page">
+    <section class="article-full">
+      <h2>Les Raids des Pessi 😭🐐</h2>
+      <p class="article-meta">Documenté par l'équipe VenirPessi</p>
+
+      <img src="images/pessi-raid.jpg" alt="Pessi Raid" class="article-img-large" />
+
+      <div class="article-content">
+        <p>Depuis 2022, les <strong>raids des fans de Pessi</strong> sont devenus un phénomène incontournable d’Internet. L'objectif ? Inonder les commentaires de comptes sportifs, de vidéos YouTube ou de tweets avec des messages comme :</p>
+        <ul>
+          <li>« FEUR 😭😭😭😭😭 »</li>
+          <li>« J’AI GAGNÉ 😭🐐🔥 »</li>
+          <li>« BALLON D’OR 🐐🐐🐐 »</li>
+          <li>« 7 BALLONS D’OR 😭😭😭 »</li>
+        </ul>
+
+        <p>Souvent organisés par de grandes figures de la communauté ou même spontanés, ces raids visent à défendre l’honneur de Messi, ou simplement semer le chaos sur les réseaux.</p>
+
+        <h3>💥 Objectifs des raids :</h3>
+        <ul>
+          <li>Répondre à une attaque contre Messi</li>
+          <li>Saboter une vidéo de Ronaldo</li>
+          <li>Flooder un top 10 de FIFA / PES</li>
+        </ul>
+
+        <h3>📸 Exemples en image :</h3>
+        <img src="images/commentaire-pessi.jpg" alt="Commentaire raid Pessi" class="article-img-large" />
+        <img src="images/twitter-raid.jpg" alt="Raid Twitter" class="article-img-large" />
+
+        <h3>🧠 Pourquoi ça marche ?</h3>
+        <p>Ce phénomène viral repose sur l’humour absurde, la répétition et l’effet de communauté. En quelques minutes, un post peut être inondé de pleurs, de GOATs et d'ironie footbalistique.</p>
+      </div>
+
+      <a href="index.html" class="back-button">← Retour à l'accueil</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 VenirPessi. Tous droits réservés.
+  </footer>
+
+  <script>
+    document.getElementById('toggle-theme').addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+
+</body>
+</html>
