@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VenirPessi - Article</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+</head>
+<css>
+    <style>
+.article-page {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.article-full {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+
+.article-img-large {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.article-full h2 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.article-meta {
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 1.5rem;
+}
+
+.article-content p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: bold;
+  transition: 0.3s;
+}
+.back-button:hover {
+  text-decoration: underline;
+}
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --bg: #f9f9f9;
+  --text: #111;
+  --accent: #ff3c3c;
+  --card-bg: #fff;
+  --header-bg: #fff;
+  --border: #ddd;
+}
+body.dark {
+  --bg: #121212;
+  --text: #f0f0f0;
+  --accent: #ff5656;
+  --card-bg: #1f1f1f;
+  --header-bg: #1a1a1a;
+  --border: #333;
+}
+
+/* BODY */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+  padding-bottom: 3rem;
+}
+
+/* HEADER */
+header {
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2.5rem;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+#toggle-theme {
+  background: none;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 0.5rem;
+}
+#toggle-theme:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+/* MAIN */
+main {
+  padding: 2rem;
+}
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid var(--border);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+.card p {
+  margin-bottom: 0.8rem;
+}
+.card a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: bold;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* ARTICLE IMAGE */
+.article-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  max-height: 200px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+  background-color: var(--header-bg);
+  color: var(--text);
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+    </style>
+</css>
+<body>
+
+  <header>
+    <div class="header-top">
+      <h1>VenirPessi</h1>
+      <button id="toggle-theme">🌙 Mode sombre</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="catégories.html">Insolite</a></li>
+        <li><a href="catégories.html">Flash</a</li>
+        <li><a href="catégories.html">Archives</a></li>
+        <li><a href="raids.html">Raids</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="article-page">
+    <article class="article-full">
+      <img src="img/new.PNG" alt="Illustration de l'article" class="article-img-large" />
+
+      <h2>Bienvenue sur le Nouveau Site de VenirPessi !</h2>
+
+      <p class="article-meta">Publié le 29 avril 2025 par <strong>l’équipe VenirPessi</strong></p>
+
+      <div class="article-content">
+        <p>Nous sommes ravis de vous annoncer le lancement officiel du nouveau site VenirPessi, un espace entièrement repensé pour offrir une meilleure expérience à notre communauté de fans et de passionnés. Le site a été conçu avec une interface moderne, plus intuitive et adaptée à vos besoins. Que vous soyez là pour rire, lire des articles ou explorer les dernières tendances, vous trouverez tout ce qu'il vous faut ici.</p>
+        <p>Un Design Rafraîchi pour une Meilleure Navigation</p>
+        <p>L'un des changements majeurs de ce nouveau site est son design repensé. Inspiré des dernières tendances web, nous avons mis un accent particulier sur la simplicité et l'efficacité. Les pages sont désormais plus épurées, les articles plus faciles à lire et la navigation optimisée pour tous les appareils.</p>
+        <p>Les utilisateurs pourront facilement trouver leurs catégories préférées, consulter les dernières actualités et bien plus encore. Le site est également désormais responsive, ce qui signifie qu'il s'adapte à toutes les tailles d'écran, que ce soit sur mobile, tablette ou ordinateur de bureau.</p>
+        <p>Un Contenu Toujours Plus Riche et Diversifié</p>
+        <p>Nous avons également travaillé dur pour enrichir notre contenu. Vous trouverez sur le site :</p>
+        <p>Des articles humoristiques sur les dernières tendances, les memes et les événements les plus drôles de la semaine.</p>
+        <p>Des interviews exclusives avec des membres de la communauté VenirPessi.</p>
+        <p>Des vidéos et des parodies à ne pas manquer, directement intégrées à notre section multimédia.</p>
+        <p>Des galeries d'images pour plonger dans l’univers visuel unique des raids Pessi et autres événements.</p>
+        <p>Le Mode Sombre et Clair</p>
+        <p>Pour s’adapter à tous les goûts, le site dispose désormais d’un mode sombre et mode clair. Vous pouvez passer de l’un à l’autre avec un simple bouton pour ajuster l’apparence du site à votre convenance, que ce soit pour une lecture nocturne ou pour profiter de l’esthétique en plein jour.</p>
+        <p>Un Nouveau Système de Catégories</p>
+        <p>Naviguer à travers les différents sujets est devenu un jeu d'enfant. Le site propose maintenant un système de catégories bien défini qui permet de trouver rapidement l'article ou la vidéo que vous cherchez. Que vous soyez passionné par l’humour, les memes ou même l'actualité de la communauté VenirPessi, tout est désormais organisé pour vous.</p>
+        <p>Découvrez le Site et Partagez-le !</p>
+        <p>Nous sommes très enthousiastes à l'idée que vous exploriez ce nouveau site et qu'il devienne votre nouveau point de référence pour tout ce qui touche à VenirPessi. N'hésitez pas à nous donner vos retours et à partager le site avec vos amis pour que la communauté continue de grandir !</p>
+      </div>
+
+      <a href="index.html" class="back-button">← Retour à l'accueil</a>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 VenirPessi. Tous droits réservés.
+  </footer>
+
+  <script>
+    const toggleTheme = document.getElementById('toggle-theme');
+    toggleTheme.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+
+</body>
+</html>
