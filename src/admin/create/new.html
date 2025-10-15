@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nouveau Article - VenirPessi</title>
+  <link rel="stylesheet" href="admin-new-article.css">
+</head>
+<css>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.new-article-container {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-family: 'Georgia', serif;
+  font-size: 26px;
+}
+
+.article-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.article-form input[type="text"],
+.article-form select,
+.article-form textarea,
+.article-form input[type="file"] {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.article-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.article-form button {
+  padding: 14px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.article-form button:hover {
+  background-color: #333;
+}
+
+.new-article-container p {
+  margin-top: 20px;
+}
+
+.new-article-container a {
+  color: #555;
+  text-decoration: none;
+}
+
+.new-article-container a:hover {
+  text-decoration: underline;
+}
+    </style>
+</css>
+<body>
+
+  <div class="new-article-container">
+    <h1>Créer un nouvel article</h1>
+    <form action="#" method="POST" enctype="multipart/form-data" class="article-form">
+      
+      <label for="title">Titre de l'article</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="category">Catégorie</label>
+      <select id="category" name="category" required>
+        <option value="">-- Choisir une catégorie --</option>
+        <option value="actus">Actus</option>
+        <option value="raids">Raids</option>
+        <option value="meme">Mèmes</option>
+        <option value="autres">Autres</option>
+      </select>
+
+      <label for="image">Image principale</label>
+      <input type="file" id="image" name="image" accept="image/*" required>
+
+      <label for="content">Contenu</label>
+      <textarea id="content" name="content" rows="10" placeholder="Écris ton article ici..." required></textarea>
+
+      <button type="submit">Publier l'article</button>
+    </form>
+
+    <p><a href="https://venirpessi.eletrix.fr/admin/menu.html">← Retour au dashboard</a></p>
+  </div>
+
+</body>
+</html>
